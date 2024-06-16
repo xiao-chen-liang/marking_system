@@ -1,37 +1,22 @@
 # 运行后端服务
 
 ```shell
-python -m venv .venv
+conda env create -f environment.yml
 
-.\.venv\Scripts\activate
-
-pip install -r requirements.txt
-
-python backend\app.py
-```
-
-# 后端依赖
-
-```shell
-pip install pdfplumber
-
-pip install openpyxl
-
-pip install Flask
-
-pip install flask-cors
-
-pip install pandas
-
-pip install mysql-connector-python
+python ./app/app.py
 ```
 
 # 运行前端服务
 
-```
+```shell
 npm install
 
 npm run serve
+```
+
+# 配置数据库
+```shell
+mysql -h hostname -u username -p postgraduate < ./postgraduate_data.sql
 ```
 
 

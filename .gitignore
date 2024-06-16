@@ -167,3 +167,4 @@ pip-delete-this-directory.txt
 .conda/
 .condarc
 .conda-env/
+marking_system_env

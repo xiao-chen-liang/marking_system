@@ -1,6 +1,4 @@
 import yagmail
-import os
-from dotenv import load_dotenv
 import random
 import bcrypt
 

@@ -18,24 +18,27 @@ def read_db_config(filename='config/config.ini', section='mysql'):
     return db
 
 
+host = "localhost"
+database = "postgraduate"
+user = "root"
+password = "root"
+
+
+import mysql.connector
+
 def connect_to_database():
     try:
-        # Get the database configuration parameters
-        db_config = read_db_config()
         # Establish a connection to the MySQL database
-        conn = mysql.connector.connect(**db_config)
+        conn = mysql.connector.connect(
+            host=host,
+            user=user,
+            password=password,
+            database=database
+        )
         if conn.is_connected():
             print('Connected to the MySQL database')
             return conn
     except Exception as e:
         print(f'Error connecting to the database: {e}')
-        return e
+        return None
 
-
-# # Example usage
-# connection = connect_to_database()
-# if connection:
-#     connection.close()
-
-# cnx = mysql.connector.connect(user='scott')
-# cursor = cnx.cursor()
