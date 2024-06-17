@@ -18,10 +18,10 @@ def read_db_config(filename='config/config.ini', section='mysql'):
     return db
 
 
-host = "localhost"
+host = "db"
 database = "postgraduate"
 user = "root"
-password = "root"
+password = "rootpassword"
 
 
 import mysql.connector

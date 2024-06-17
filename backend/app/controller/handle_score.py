@@ -425,7 +425,7 @@ def update_allocation_data(data):
 
 
 def generate_output_file(outputData):
-    download_directory = 'src/result_table'
+    download_directory = '/backend/app/src/result_table'
     file_name = outputData['rule']['college'] + '_' + str(outputData['rule']['grade']) + '_ranking.xlsx'
     download_path = os.path.join(download_directory, file_name)
 

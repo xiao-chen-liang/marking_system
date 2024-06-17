@@ -220,8 +220,8 @@ def upload_report(info, detail_data):
 def handle_file(file: FileStorage):
     """Handle the uploaded file and extract the required information"""
 
-    upload_directory = 'src/temp_score_report'
-    score_report_directory = 'src/score_report'
+    upload_directory = '/backend/app/src/temp_score_report'
+    score_report_directory = '/backend/app/src/score_report'
     try:
         filename = file.filename
         upload_path = os.path.join(upload_directory, filename)

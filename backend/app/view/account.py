@@ -181,7 +181,7 @@ def login_check(func):
 
             print("token: ", token)
         except Exception as e:
-            return jsonify({'message': '请先登录'}), 401
+            return jsonify({'message': '请先登录!abc'}), 401
 
         local_timestamp = int(time.time())
         select = acc.select_account(token=token)
