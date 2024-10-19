@@ -1,3 +1,10 @@
+# 介绍
+这是一个前后端web系统，是一个本科的毕业设计，实现了西南林业大学保研评分的自动化。
+数据库使用mysql,后端使用python。
+实现了docker部署，免除了配置环境的麻烦。
+配置步骤如下。
+有关此项目的问题可以联系 qq: 485669690. 
+
 # 配置数据库
 ```shell
 mysql -h hostname -u username -p postgraduate < ./postgraduate_data.sql
@@ -21,6 +28,8 @@ npm run serve
 ```shell
 docker-compose up
 ```
+
+
 
 
 
