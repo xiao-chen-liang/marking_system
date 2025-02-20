@@ -1,0 +1,170 @@
+# Ignore Python-specific files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+*.eggs/
+*.whl
+*.manifest
+*.spec
+
+# Virtual Environment
+venv/
+.env/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# PyInstaller
+# Usually contains the result of PyInstaller builds
+dist/
+build/
+*.log
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# pytest
+.cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Environments and caches
+.env/
+.venv/
+ENV/
+env/
+venv/
+env.bak/
+venv.bak/
+venv/Lib/site-packages
+
+# Unit test / coverage reports
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+media
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# celery beat schedule file
+celerybeat-schedule
+
+# dotenv
+.env.local
+.env.*.local
+
+# vue.js
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.vscode/
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*~
+.project
+.settings/
+.metadata/
+.DS_Store
+*.iml
+
+# Log files
+logs/
+*.log
+
+# Other
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.save
+*.swp
+*.swo
+*~
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# IDE files
+.idea/
+.vscode/
+
+# Local history
+.localhistory/
+
+# Vim swap files
+*.swp
+
+# Files created by pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Anaconda
+.conda/
+.condarc
+.conda-env/
+marking_system_env

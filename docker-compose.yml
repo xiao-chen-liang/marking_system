@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  db:
+    image: xiaochenliang/database-postgraduate:1.0
+    ports:
+      - "3800:3306"
+
+  flask_app:
+    image: xiaochenliang/backend-postgraduate:1.0
+    volumes:
+      - ./backend/app:/backend/app
+    ports:
+      - "5000:5000"
+
+  frontend:
+    image: xiaochenliang/frontend-postgraduate:1.0
+    ports:
+      - "8080:8080"
+
+
